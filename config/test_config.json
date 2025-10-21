@@ -1,0 +1,23 @@
+{
+  "can_interface": {
+    "interface": "simulation",
+    "channel": "virtual",
+    "bitrate": 500000
+  },
+  "ecu_config": {
+    "speed_sensor": {
+      "can_id": "0x200",
+      "signal_name": "vehicle_speed",
+      "min_value": 0,
+      "max_value": 250,
+      "unit": "km/h"
+    },
+    "engine_rpm": {
+      "can_id": "0x201",
+      "signal_name": "engine_rpm",
+      "min_value": 0,
+      "max_value": 8000,
+      "unit": "rpm"
+    }
+  }
+}

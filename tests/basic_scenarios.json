@@ -1,0 +1,81 @@
+[
+  {
+    "id": "TS_001",
+    "name": "Test capteur vitesse bloqué",
+    "preconditions": {
+      "duration": 2
+    },
+    "faults": [
+      {
+        "type": "frozen_value",
+        "can_id": "0x200",
+        "data": "0000000000000000",
+        "duration": 3,
+        "description": "Capteur vitesse = 0 km/h constant"
+      }
+    ],
+    "expected_behavior": {
+      "dtc_codes": ["P0500"],
+      "failsafe": true
+    }
+  },
+  {
+    "id": "TS_002",
+    "name": "Test vitesse hors limites",
+    "preconditions": {
+      "duration": 1
+    },
+    "faults": [
+      {
+        "type": "out_of_range",
+        "can_id": "0x200",
+        "max_value": 250,
+        "duration": 3,
+        "description": "Vitesse > 250 km/h"
+      }
+    ],
+    "expected_behavior": {
+      "dtc_codes": ["P0501"],
+      "failsafe": true
+    }
+  },
+  {
+    "id": "TS_003",
+    "name": "Test message capteur absent",
+    "preconditions": {
+      "duration": 1
+    },
+    "faults": [
+      {
+        "type": "missing",
+        "can_id": "0x200",
+        "duration": 5,
+        "description": "Message vitesse absent 5s"
+      }
+    ],
+    "expected_behavior": {
+      "dtc_codes": ["U0100"],
+      "failsafe": true
+    }
+  },
+  {
+    "id": "TS_004",
+    "name": "Test saturation bus CAN",
+    "preconditions": {
+      "duration": 1
+    },
+    "faults": [
+      {
+        "type": "flooding",
+        "can_id": "0x7FF",
+        "rate": 2000,
+        "duration": 3,
+        "description": "Flooding 2000 msg/s"
+      }
+    ],
+    "expected_behavior": {
+      "bus_load": ">95%",
+      "message_loss": true
+    }
+  }
+]

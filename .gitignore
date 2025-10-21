@@ -1,0 +1,27 @@
+### **Fichier 10 : `.gitignore`**
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs et rapports
+*.log
+test_report.txt
+*.png
+
+# OS
+.DS_Store
+Thumbs.db
