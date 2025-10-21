@@ -1,6 +1,6 @@
 Prototype – Plateforme d’automatisation de tests ECU
 
-Ce projet est un prototype développé dans le cadre d’une candidature pour un stage PFE pour Capgemini Maroc 2026.
+Ce projet est un prototype développé dans le cadre d’une candidature pour un stage PFE.
 Il a pour but d’automatiser les tests d’ECUs automobiles en simulant des pannes sur le bus CAN, sans modifier le matériel.
 L’objectif est de faciliter la validation logicielle et d’accélérer les phases de test.
 
