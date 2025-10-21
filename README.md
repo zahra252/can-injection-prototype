@@ -188,24 +188,24 @@ Ce prototype démontre les concepts de base. Version complète prévoira:
 
 ## Évolution Prévue
 
-**Phase 1 (Prototype actuel):**
+**Phase 1 :**
  Injection de base fonctionnelle
  Automatisation simple
  Reporting texte
 
-**Phase 2 (Mois 1-2 du PFE):**
+**Phase 2 :**
 Dashboard web React
 Analyse intelligente des résultats
 Support fichiers DBC
 
-**Phase 3 (Mois 2-4 du PFE):**
+**Phase 3 :**
  Machine Learning pour détection anomalies
  Génération automatique de scénarios
  Conformité ISO 26262
 
 ## Licence
 
-MIT License - Projet académique pour candidature PFE Capgemini
+MIT License - Projet académique 
 
 **FATIMA AMAR**
 - 5ème année Génie Électrique - ENSA Kénitra
