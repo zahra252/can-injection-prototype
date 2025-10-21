@@ -212,6 +212,5 @@ MIT License - Projet académique pour candidature PFE Capgemini
 - Email: [fatima.amar@uit.ac.ma]
 
 
-Prototype développé dans le cadre d'une candidature pour un stage PFE 
-au sein de Capgemini Maroc - Équipe Test & Validation Automobile.
+
 
